@@ -1,0 +1,7 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/FIX_Parser.dir/main.cpp.o: dyndep
+
+build CMakeFiles/FIX_Parser.dir/Reader.cpp.o: dyndep
+
+build CMakeFiles/FIX_Parser.dir/FIXParser.cpp.o: dyndep
+
