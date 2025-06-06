@@ -7,4 +7,5 @@ add_executable(FIX_Parser main.cpp
         Reader.cpp
         Reader.h
         FIXParser.cpp
-        FIXParser.h)
+        FIXParser.h
+        main.cpp)

@@ -4,7 +4,7 @@
 
 int main() {
 
-    Reader reader {"/home/shardee_/Projects/C++/FIX_Parser/fix_messages.txt"};
+    Reader reader {"/home/shardee_/Projects/C++/FIX-Protocol-Parser/fix_messages.txt"};
     FIXParser parser {};
     std::deque<std::string> messages {};
 
