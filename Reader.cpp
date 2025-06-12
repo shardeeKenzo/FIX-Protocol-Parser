@@ -8,7 +8,7 @@
 #include <iostream>
 
 
-std::deque<std::string> Reader::extractMessages() const {
+std::deque<std::string> Reader::extractMessages(const std::string& path) const {
 
     std::ifstream f(path);
 

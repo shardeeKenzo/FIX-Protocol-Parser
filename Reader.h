@@ -11,13 +11,10 @@
 class Reader {
 private:
 
-    std::string path;
-
 public:
-    explicit Reader(std::string  path_) : path {std::move(path_)}
-    {}
+    Reader() = default;
 
-    [[nodiscard]] std::deque<std::string> extractMessages() const;
+    std::deque<std::string> extractMessages(const std::string& path) const;
 };
 
 #endif //READER_H

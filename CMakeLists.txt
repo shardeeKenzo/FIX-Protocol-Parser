@@ -8,4 +8,6 @@ add_executable(FIX_Parser main.cpp
         Reader.h
         FIXParser.cpp
         FIXParser.h
-        main.cpp)
+        main.cpp
+        LoggerCSV.cpp
+        LoggerCSV.h)
