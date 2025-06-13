@@ -16,11 +16,7 @@ private:
 public:
     FIXParser()= default;
 
-    void decode_data();
     std::unordered_map<std::string, std::string> decode_single_fix_msg(std::string& msg);
-    void log_data() const;
-
-
 };
 
 

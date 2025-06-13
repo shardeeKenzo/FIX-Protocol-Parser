@@ -9,17 +9,21 @@ int main() {
     FIXParser parser;
     LoggerCSV logger_csv;
 
+    std::ofstream csv("msg-fix-logs.csv");
+
     std::deque<std::string> messages {};
-    int i = 1;
 
     messages = reader.extractMessages("/home/shardee_/Projects/C++/FIX-Protocol-Parser/fix_messages.txt");
+
+    logger_csv.init_csv(csv);
 
     for (std::string msg : messages) {
         std::unordered_map<std::string, std::string> map = parser.decode_single_fix_msg(msg);
 
-        logger_csv.log_into_csv(static_cast<char>(i) + "mmmmmmmmmsg_log.csv", map);
-        i++;
+        logger_csv.log_into_csv(csv, map);
     }
+
+    csv.close();
 
     return 0;
 }
